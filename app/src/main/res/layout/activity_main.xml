@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="@font/tahomab0"
+        android:text="XYZ"
+        android:textColor="@color/gris1"
+        android:textSize="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/txt_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/txt_subtitle"
+        android:layout_width="187dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/tahomab0"
+        android:text="SISTEMA DE INVENTARIO"
+        android:textColor="@color/gris1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_acceder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <Button
+        android:id="@+id/btn_acceder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="@color/gris1"
+        android:fontFamily="@font/tahomab0"
+        android:gravity="center"
+        android:onClick="Ingresar"
+        android:text="ACCEDER"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_MQTT"
+        app:layout_constraintEnd_toEndOf="@+id/btn_MQTT"
+        app:layout_constraintTop_toBottomOf="@+id/txt_subtitle" />
+
+    <Button
+        android:id="@+id/btn_MQTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:backgroundTint="@color/gris1"
+        android:fontFamily="@font/tahomab0"
+        android:gravity="center"
+        android:onClick="mqtt"
+        android:text="MQTT"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_acceder" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="253dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
